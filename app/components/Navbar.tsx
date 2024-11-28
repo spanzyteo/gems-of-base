@@ -73,11 +73,11 @@ const Navbar = () => {
         <div className="text-right h-[70px] w-[120px] bg-white absolute right-4 top-20 rounded-lg lg:flex hidden flex-col">
           <div className="flex items-center gap-3 mt-2 ml-2">
             <FaSun />
-            <h1 className="text-xl">Light</h1>
+            <h1 className="text-xl font-semibold">光</h1>
           </div>
           <div className="flex items-center gap-3 mt-1 ml-2">
             <FaMoon />
-            <h1 className="text-xl">Dark</h1>
+            <h1 className="text-xl font-semibold">黑暗的</h1>
           </div>
         </div>
       )}
@@ -96,26 +96,26 @@ const Navbar = () => {
           <h1 className="text-white mt-2">获取列表</h1>
           <FaXTwitter className="h-[50px] w-[50px] text-white mt-6" />
         </div>
-          <div
-            onClick={() => handleSwitchClick()}
-            className="flex items-center text-white border border-white rounded-md px-2 hover:bg-white hover:text-black cursor-pointer transition-all duration-300 ease-in-out mt-6 mb-4 w-[100px] justify-between"
-          >
-            <div className="flex items-center">
-              <FaSun />
-              <h1 className="text-2xl">/</h1>
-              <FaMoon />
-            </div>
-            <FaCaretDown className="text-xs ml-2" />
+        <div
+          onClick={() => handleSwitchClick()}
+          className="flex items-center text-white border border-white rounded-md px-2 hover:bg-white hover:text-black cursor-pointer transition-all duration-300 ease-in-out mt-6 mb-4 w-[100px] justify-between"
+        >
+          <div className="flex items-center">
+            <FaSun />
+            <h1 className="text-2xl">/</h1>
+            <FaMoon />
           </div>
+          <FaCaretDown className="text-xs ml-2" />
+        </div>
         {switchOpen && (
           <div className="h-[90px] w-[100px] bg-white rounded-lg lg:hidden flex flex-col mb-4 gap-2 justify-center">
             <div className="flex items-center gap-3 mt-2 ml-2 ">
               <FaSun />
-              <h1 className="text-xl">Light</h1>
+              <h1 className="text-lg text-black font-semibold">光</h1>
             </div>
             <div className="flex items-center gap-3 mt-1 ml-2">
               <FaMoon />
-              <h1 className="text-xl">Dark</h1>
+              <h1 className="text-lg text-black font-semibold">黑暗的</h1>
             </div>
           </div>
         )}
