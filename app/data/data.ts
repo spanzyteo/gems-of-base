@@ -13,10 +13,11 @@ export interface DataItem {
 export const data: DataItem[] = [
   {
     id: 0,
-    avatar: '',
+    avatar: '/boop.jpg',
     title: 'Boop 底座',
     initial: '(博普)',
-    description: '$Boop - 基地上的第一个 meme',
+    description:
+      '$BOOP 的 Twitter 账号是“rgboop”，后来突然改了。这个角色已经在公众视野中隐藏太久了。我们深入挖掘，以了解更多关于 Base 上这只神秘老鼠的信息',
     website: 'https://www.boopbase.com/',
     twitter: 'https://x.com/BoopBase',
     telegram: 'https://t.me/BoopBase',
@@ -24,7 +25,7 @@ export const data: DataItem[] = [
   },
   {
     id: 1,
-    avatar: '',
+    avatar: '/ebert.jpg',
     title: '艾伯特',
     initial: '($EBERT)',
     description:
@@ -36,10 +37,10 @@ export const data: DataItem[] = [
   },
   {
     id: 2,
-    avatar: '',
+    avatar: '/carpet.jpg',
     title: '魔毯底座',
     initial: '($CRPT)',
-    description: '发现以太坊上的流行代币。',
+    description: 'Magic Carpet 是一个社区 meme 项目，旨在为 Base 上的用户创造一个神奇的旅程，我们希望代表所有通过协会打上“地毯”一词的地毯。我们正在 Base 上构建一个有趣且温馨的空间，供人们闲逛和交换 meme。我们希望随着时间的推移，有机地发展我们的社区版主、项目程序员和图形艺术家',
     website: 'https://flooz.xyz/MagicCarpetBase',
     twitter: 'https://x.com/MagicCarpetBase',
     telegram: 'https://t.me/iris_flooz_xyz',
@@ -47,7 +48,7 @@ export const data: DataItem[] = [
   },
   {
     id: 3,
-    avatar: '',
+    avatar: '/vereum.jpg',
     title: '维雷姆',
     initial: '(平均电压)',
     description:
@@ -59,7 +60,7 @@ export const data: DataItem[] = [
   },
   {
     id: 4,
-    avatar: '',
+    avatar: '/based-buster.jpg',
     title: '基地克星',
     initial: '($BSTR)',
     description:
@@ -71,7 +72,7 @@ export const data: DataItem[] = [
   },
   {
     id: 5,
-    avatar: '',
+    avatar: '/lil-brett.jpg',
     title: '里尔·布雷特',
     initial: '($LILB)',
     description:
@@ -83,7 +84,7 @@ export const data: DataItem[] = [
   },
   {
     id: 6,
-    avatar: '',
+    avatar: '/priceai.jpg',
     title: '价格 艾',
     initial: '($PRICEAI)',
     description:
@@ -95,7 +96,7 @@ export const data: DataItem[] = [
   },
   {
     id: 7,
-    avatar: '',
+    avatar: '/baby-miggles.jpg',
     title: '婴儿 米格尔斯',
     initial: '($BMIGGLES)',
     description:
