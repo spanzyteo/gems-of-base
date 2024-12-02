@@ -107,13 +107,13 @@ const Gems = () => {
                 key={item.id}
                 className="w-[100%]  flex-shrink-0 flex flex-col relative"
               >
-                <div className="flex items-center gap-2 px-2">
+                <div className="flex items-center gap-1 px-2">
                   <img
                     src={item.avatar}
                     alt="img"
                     className="h-[75px] w-[75px] object-contain rounded-full"
                   />
-                  <div className="ml-6">
+                  <div className="ml-3">
                     <h1 className="text-lg font-bold">
                       {item.title}{' '}
                       <span className="text-gray-600 font-normal">
@@ -125,7 +125,7 @@ const Gems = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex mt-40 absolute right-44 gap-10 text-[20px]">
+                <div className="flex mt-[10.3rem] absolute right-44 gap-10 text-[20px]">
                   <FaLink />
                   <FaXTwitter />
                   <FaTelegramPlane />
