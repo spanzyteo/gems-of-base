@@ -77,7 +77,7 @@ const Gems = () => {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex justify-center mt-4 space-x-4 pb-2">
+      <div className="lg:flex hidden justify-center mt-4 space-x-4 pb-2">
         {limitedData.map((_, index) => (
           <h1
             key={index}
