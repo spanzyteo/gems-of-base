@@ -32,7 +32,7 @@ const Gems = () => {
         <h1 className="text-[20px] ml-6">Jiamuqu</h1>
         <BsFillQuestionCircleFill className="h-[20px] w-[20px] mr-6 text-gray-500" />
       </div>
-      <div className="overflow-hidden relative h-[300px] flex items-center">
+      <div className="overflow-hidden relative h-[300px] lg:flex hidden items-center">
         <div
           className="flex items-center transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
