@@ -17,7 +17,7 @@ const MobileSearchTokens = () => {
           placeholder="搜索"
         />
       </div>
-      <div className="w-[95%] border border-[#0000002D] flex flex-col rounded-md mt-4 mx-auto shadow-xl">
+      <div className="w-[95%] border border-[#0000002D] flex lg:hidden flex-col rounded-md mt-4 mx-auto shadow-xl">
         <div className="bg-[#21252908] text-xl border-b border-b-[#0000002D] flex items-center justify-center py-2">
           <h1>精选代币</h1>
         </div>

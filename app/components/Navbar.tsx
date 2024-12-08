@@ -6,9 +6,9 @@ import { FaXTwitter } from 'react-icons/fa6'
 import { FaSun } from 'react-icons/fa'
 import { FaMoon } from 'react-icons/fa6'
 import { FaCaretDown } from 'react-icons/fa'
-import { FaX } from 'react-icons/fa6'
 import { FaXmark } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
+import { openDarkMode, openLightMode } from '../store/DarkModeSlice'
 
 const Navbar = () => {
   const sidebarOpen = useAppSelector((state) => state.sidebar.open)
@@ -21,6 +21,14 @@ const Navbar = () => {
 
   const handleSwitchClick = () => {
     dispatch(toggleSwitch())
+  }
+
+  const handleLightMode = () => {
+    dispatch(openLightMode())
+  }
+
+  const handleDarkMode = () => {
+    dispatch(openDarkMode())
   }
 
   const sidebarVariants = {
@@ -70,12 +78,12 @@ const Navbar = () => {
         </div>
       </div>
       {switchOpen && (
-        <div className="text-right h-[70px] w-[120px] bg-white absolute right-4 top-20 rounded-lg lg:flex hidden flex-col">
-          <div className="flex items-center gap-3 mt-2 ml-2">
+        <div className="text-right h-[70px] w-[120px] bg-white absolute right-4 top-20 rounded-lg lg:flex hidden flex-col z-10">
+          <div onClick={() => handleLightMode()} className="flex items-center gap-3 mt-2 ml-2 cursor-pointer">
             <FaSun className='font-semibold text-black'/>
             <h1 className="text-xl font-semibold">光</h1>
           </div>
-          <div className="flex items-center gap-3 mt-1 ml-2">
+          <div onClick={() => handleDarkMode()} className="flex items-center gap-3 mt-1 ml-2 cursor-pointer">
             <FaMoon className='font-semibold text-black'/>
             <h1 className="text-xl font-semibold">黑暗的</h1>
           </div>
@@ -108,12 +116,12 @@ const Navbar = () => {
           <FaCaretDown className="text-xs ml-2" />
         </div>
         {switchOpen && (
-          <div className="h-[90px] w-[100px] bg-white rounded-lg lg:hidden flex flex-col mb-4 gap-2 justify-center">
-            <div className="flex items-center gap-3 mt-2 ml-2 ">
+          <div className="h-[90px] w-[100px] bg-white rounded-lg lg:hidden flex flex-col mb-4 gap-2 justify-center z-10">
+            <div onClick={() => handleLightMode()} className="flex items-center gap-3 mt-2 ml-2 cursor-pointer">
               <FaSun />
-              <h1 className="text-lg text-black font-semibold">光</h1>
+              <h1 className="text-lg text-black font-semibold ">光</h1>
             </div>
-            <div className="flex items-center gap-3 mt-1 ml-2">
+            <div onClick={() =>handleDarkMode()} className="flex items-center gap-3 mt-1 ml-2 cursor-pointer">
               <FaMoon />
               <h1 className="text-lg text-black font-semibold">黑暗的</h1>
             </div>

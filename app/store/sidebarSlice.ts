@@ -3,11 +3,13 @@ import { createSlice } from '@reduxjs/toolkit'
 interface SidebarState {
   open: boolean
   switch: boolean
+  darkMode: boolean
 }
 
 const initialState: SidebarState = {
   open: false,
-  switch: false
+  switch: false,
+  darkMode: false
 }
 
 const sidebarSlice = createSlice({
@@ -19,9 +21,9 @@ const sidebarSlice = createSlice({
     },
     toggleSwitch: (state) => {
       state.switch = !state.switch
-    }
+    },
   },
 })
 
-export const {toggleSection, toggleSwitch} = sidebarSlice.actions
+export const {toggleSection, toggleSwitch, } = sidebarSlice.actions
 export default sidebarSlice.reducer
