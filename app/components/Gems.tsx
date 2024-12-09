@@ -8,6 +8,7 @@ import { FaXTwitter } from 'react-icons/fa6'
 import { FaTelegramPlane } from 'react-icons/fa'
 import Link from 'next/link'
 import MobileSearchTokens from './MobileSearchTokens'
+import UpcomingLaunches from './UpcomingLaunches'
 
 const Gems = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -150,6 +151,7 @@ const Gems = () => {
         </div>
       </div>
       <MobileSearchTokens/>
+      <UpcomingLaunches />
     </div>
   )
 }

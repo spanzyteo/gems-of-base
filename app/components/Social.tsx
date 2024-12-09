@@ -5,6 +5,7 @@ import { FaXmark } from 'react-icons/fa6'
 import { FaX } from 'react-icons/fa6'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
 import { closeListingModal } from '../store/modalSlice'
+import UpcomingLaunches from './UpcomingLaunches'
 
 const Social = () => {
   const dispatch = useAppDispatch()
@@ -24,17 +25,21 @@ const Social = () => {
             <FaXTwitter className="w-[30px] h-[30px] text-[#1F556A]" />
             <FaTelegram className="w-[30px] h-[30px] text-[#1F556A]" />
           </div>
-          {openListinModal && (
-            <div className="w-[95%] bg-[#CFE2FF] mt-6 flex items-start border border-[#9EC5FE] mx-auto justify-between rounded-lg py-2 px-4">
-              <div className="w-[70%] flex flex-col text-[#052C65] font-normal text-lg">
-                <h1>嘿</h1>
-                <h1>想要在这个网站上展示您的项目吗？</h1>
-                <h1 className="underline cursor-pointer">获得精选</h1>
-              </div>
-              <FaX onClick={() => handleCloseModal()} className="h-[20px] w-[20px] font-thin text-[#052C65] mt-2 cursor-pointer" />
-            </div>
-          )}
         </div>
+        {openListinModal && (
+          <div className="w-[95%] bg-[#CFE2FF] mt-6 flex items-start border border-[#9EC5FE] mx-auto justify-between rounded-lg py-2 px-4">
+            <div className="w-[70%] flex flex-col text-[#052C65] font-normal text-lg">
+              <h1>嘿</h1>
+              <h1>想要在这个网站上展示您的项目吗？</h1>
+              <h1 className="underline cursor-pointer">获得精选</h1>
+            </div>
+            <FaX
+              onClick={() => handleCloseModal()}
+              className="h-[20px] w-[20px] font-thin text-[#052C65] mt-2 cursor-pointer"
+            />
+          </div>
+        )}
+        <UpcomingLaunches />
       </div>
     </>
   )

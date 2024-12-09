@@ -32,7 +32,7 @@ const MobileSearchTokens = () => {
                 />
               </div>
               <div className="flex flex-col gap-3 w-[150px]">
-                <h1 className="text-xl">
+                <h1 className="text-md">
                   {item.title}{' '}
                   <span className="text-gray-600">{item.initial}</span>
                 </h1>

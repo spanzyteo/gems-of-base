@@ -12,7 +12,7 @@ export interface UpcomingItem {
   launchDate: string
 }
 
-export const data: UpcomingItem[] = [
+export const upcoming: UpcomingItem[] = [
   {
     id: 0,
     avatar: '/boop.jpg',
