@@ -4,6 +4,7 @@ import { FaXTwitter } from 'react-icons/fa6'
 import { FaTelegramPlane } from 'react-icons/fa'
 import Link from 'next/link'
 import { useAppSelector } from '../store/hooks'
+import LatestAdditions from './LatestAdditions'
 const SearchTokens = () => {
   const darkState = useAppSelector((state) => state.darkMode.darkMode)
   return (
@@ -98,6 +99,7 @@ const SearchTokens = () => {
           ))}
         </div>
       </div>
+      <LatestAdditions />
     </div>
   )
 }

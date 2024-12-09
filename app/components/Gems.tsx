@@ -9,6 +9,7 @@ import { FaTelegramPlane } from 'react-icons/fa'
 import Link from 'next/link'
 import MobileSearchTokens from './MobileSearchTokens'
 import UpcomingLaunches from './UpcomingLaunches'
+import LatestAdditions from './LatestAdditions'
 
 const Gems = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -64,13 +65,13 @@ const Gems = () => {
               </div>
               <div className="flex mt-40 absolute right-44 gap-10 text-[20px]">
                 <Link href={item.website}>
-                <FaLink />
+                  <FaLink />
                 </Link>
                 <Link href={item.twitter}>
-                <FaXTwitter />
+                  <FaXTwitter />
                 </Link>
                 <Link href={item.telegram}>
-                <FaTelegramPlane />
+                  <FaTelegramPlane />
                 </Link>
               </div>
             </div>
@@ -150,8 +151,11 @@ const Gems = () => {
           ))}
         </div>
       </div>
-      <MobileSearchTokens/>
-      <UpcomingLaunches />
+      <MobileSearchTokens />
+      <div className='lg:hidden block'>
+        <UpcomingLaunches />
+        <LatestAdditions />
+      </div>
     </div>
   )
 }
