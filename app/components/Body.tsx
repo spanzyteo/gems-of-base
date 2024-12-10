@@ -3,6 +3,7 @@ import Gems from './Gems'
 import SearchTokens from './SearchTokens'
 import Social from './Social'
 import { useAppSelector } from '../store/hooks'
+import ShowRoom from './ShowRoom'
 
 const Body = () => {
   const darkState = useAppSelector((state) => (state.darkMode.darkMode))
@@ -10,6 +11,7 @@ const Body = () => {
     <Gems/>
     <SearchTokens />
     <Social />
+    <ShowRoom />
   </div>
 }
 

@@ -29,7 +29,7 @@ const Gems = () => {
   }, [limitedData.length])
 
   return (
-    <div className="mx-auto xl:w-[556px] lg:w-[467px] w-[95%] border border-[#0000002D] mt-4 rounded-md py-1 shadow-2xl">
+    <div className="mx-auto xl:w-[556px] lg:w-[467px] w-[95%] border border-[#0000002D] mt-4 rounded-md py-1 shadow-xl">
       {/* Header */}
       <div className="bg-[#21252908] py-2 lg:flex hidden items-center justify-between border-b border-b-[#0000002D]">
         <h1 className="text-[20px] ml-6">Jiamuqu</h1>

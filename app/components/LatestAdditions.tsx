@@ -8,7 +8,7 @@ import { FaTelegramPlane } from 'react-icons/fa'
 const LatestAdditions = () => {
   const darkState = useAppSelector((state) => state.darkMode.darkMode)
   return (
-    <div className="w-[95%] mt-4 flex flex-col rounded-md border border-[#0000002D] mx-auto ">
+    <div className="w-[95%] mt-4 flex flex-col rounded-md border border-[#0000002D] mx-auto mb-4">
       <div
         className={`bg-[#21252908] text-2xl border-b flex items-center justify-center py-2 ${
           darkState ? 'border-b-[#FFFFFF26]' : 'border-b-[#0000002D]'
@@ -47,7 +47,7 @@ const LatestAdditions = () => {
                   {item.initial}
                 </span>
               </h1>
-              <div className="flex flex-row text-gray-600 lg:gap-6 gap-10 mt-2">
+              <div className="flex flex-row text-gray-600 lg:gap-6 gap-10 mt-4">
                 <Link href={item.website}>
                   <FaLink className={`${darkState ? 'text-[#DEE2E6]' : ''}`} />
                 </Link>
