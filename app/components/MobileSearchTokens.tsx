@@ -6,6 +6,7 @@ import { FaTelegramPlane } from 'react-icons/fa'
 
 const MobileSearchTokens = () => {
   return (
+    
     <>
       <div className="w-[98%] border border-[#0000002D] lg:hidden flex flex-col rounded-md mx-auto mt-3 shadow-xl">
         <div className="bg-[#21252908] text-2xl border-b border-b-[#0000002D] flex items-center justify-center py-2">
