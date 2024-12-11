@@ -79,12 +79,22 @@ const Navbar = () => {
       </div>
       {switchOpen && (
         <div className="text-right h-[70px] w-[120px] bg-white absolute right-4 top-20 rounded-lg lg:flex hidden flex-col z-10">
-          <div onClick={() => handleLightMode()} className="flex items-center gap-3 mt-2 ml-2 cursor-pointer">
-            <FaSun className='font-semibold text-black'/>
+          <div
+            onClick={() => {
+              handleLightMode(), handleSwitchClick()
+            }}
+            className="flex items-center gap-3 mt-2 ml-2 cursor-pointer"
+          >
+            <FaSun className="font-semibold text-black" />
             <h1 className="text-xl font-semibold">光</h1>
           </div>
-          <div onClick={() => handleDarkMode()} className="flex items-center gap-3 mt-1 ml-2 cursor-pointer">
-            <FaMoon className='font-semibold text-black'/>
+          <div
+            onClick={() => {
+              handleDarkMode(), handleSwitchClick()
+            }}
+            className="flex items-center gap-3 mt-1 ml-2 cursor-pointer"
+          >
+            <FaMoon className="font-semibold text-black" />
             <h1 className="text-xl font-semibold">黑暗的</h1>
           </div>
         </div>
@@ -117,11 +127,21 @@ const Navbar = () => {
         </div>
         {switchOpen && (
           <div className="h-[90px] w-[100px] bg-white rounded-lg lg:hidden flex flex-col mb-4 gap-2 justify-center z-10">
-            <div onClick={() => handleLightMode()} className="flex items-center gap-3 mt-2 ml-2 cursor-pointer">
+            <div
+              onClick={() => {
+                handleLightMode(), handleSwitchClick()
+              }}
+              className="flex items-center gap-3 mt-2 ml-2 cursor-pointer"
+            >
               <FaSun />
               <h1 className="text-lg text-black font-semibold ">光</h1>
             </div>
-            <div onClick={() =>handleDarkMode()} className="flex items-center gap-3 mt-1 ml-2 cursor-pointer">
+            <div
+              onClick={() => {
+                handleDarkMode(), handleSwitchClick()
+              }}
+              className="flex items-center gap-3 mt-1 ml-2 cursor-pointer"
+            >
               <FaMoon />
               <h1 className="text-lg text-black font-semibold">黑暗的</h1>
             </div>
