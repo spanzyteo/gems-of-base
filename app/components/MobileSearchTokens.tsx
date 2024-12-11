@@ -45,7 +45,13 @@ const MobileSearchTokens = () => {
         </div>
         <div className="flex flex-col ">
           {data.map((item: DataItem) => (
-            <div className="flex flex-row items-center border-b border-b-[#0000002D] py-3 gap-8">
+            <div
+              className={`flex flex-row items-center border-b  py-3 gap-8 ${
+                darkState
+                  ? 'bg-[#212529] border-b-[#EEEEEE]'
+                  : 'bg-white border-b-[#0000002D]'
+              }`}
+            >
               <div>
                 <img
                   src={item.avatar}

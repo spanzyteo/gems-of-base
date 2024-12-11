@@ -9,7 +9,11 @@ import { nfts, NftsItem } from '../data/nfts'
 const UpcomingLaunches = () => {
   const darkState = useAppSelector((state) => state.darkMode.darkMode)
   return (
-    <div className="w-[95%] mt-4 flex flex-col rounded-md border border-[#0000002D] mx-auto ">
+    <div
+      className={`lg:w-[95%] w-[98%] mt-4 flex flex-col rounded-md border  mx-auto ${
+        darkState ? 'border-[#FFFFFF26]' : 'border-[#0000002D]'
+      }`}
+    >
       <div
         className={`bg-[#21252908] text-2xl border-b flex items-center justify-center py-2 ${
           darkState ? 'border-b-[#FFFFFF26]' : 'border-b-[#0000002D]'
@@ -26,8 +30,10 @@ const UpcomingLaunches = () => {
       >
         {upcoming.map((item: UpcomingItem) => (
           <div
-            className={`flex flex-row items-center  lg:justify-between border-b border-b-[#0000002D] py-3 ${
-              darkState ? 'bg-[#212529]' : 'bg-white'
+            className={`flex flex-row items-center  lg:justify-between border-b py-3 ${
+              darkState
+                ? 'bg-[#212529] border-b-[#EEEEEE]'
+                : 'bg-white border-b-[#0000002D]'
             }`}
           >
             <div>

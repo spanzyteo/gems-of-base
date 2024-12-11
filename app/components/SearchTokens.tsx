@@ -55,8 +55,10 @@ const SearchTokens = () => {
         >
           {data.map((item: DataItem) => (
             <div
-              className={`flex flex-row items-center  justify-between border-b border-b-[#0000002D] py-3 ${
-                darkState ? 'bg-[#212529]' : 'bg-white'
+              className={`flex flex-row items-center  justify-between border-b py-3 ${
+                darkState
+                  ? 'bg-[#212529] border-b-[#EEEEEE]'
+                  : 'bg-white border-b-[#0000002D]'
               }`}
             >
               <div>
