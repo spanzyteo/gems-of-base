@@ -4,6 +4,7 @@ import SearchTokens from './SearchTokens'
 import Social from './Social'
 import { useAppSelector } from '../store/hooks'
 import ShowRoom from './ShowRoom'
+import MobileSocial from './MobileSocial'
 
 const Body = () => {
   const darkState = useAppSelector((state) => (state.darkMode.darkMode))
@@ -12,6 +13,7 @@ const Body = () => {
     <SearchTokens />
     <Social />
     <ShowRoom />
+    <MobileSocial />
   </div>
 }
 

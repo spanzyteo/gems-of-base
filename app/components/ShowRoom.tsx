@@ -8,8 +8,16 @@ import { showRoom, ShowRoomData } from '../data/showroom'
 const ShowRoom = () => {
   const darkState = useAppSelector((state) => state.darkMode.darkMode)
   return (
-    <div className="mx-auto xl:w-[556px] lg:w-[467px] w-[95%] border border-[#0000002D] mt-4 rounded-md py-1 shadow-xl">
-      <div className="bg-[#21252908] py-2 flex items-center justify-center border-b border-b-[#0000002D]">
+    <div
+      className={`mx-auto xl:w-[556px] lg:w-[467px] w-[95%] border mt-4 rounded-md py-1 shadow-xl ${
+        darkState ? 'border-[#FFFFFF26]' : 'border-[#0000002D]'
+      }`}
+    >
+      <div
+        className={`bg-[#21252908] py-2 flex items-center justify-center border-b ${
+          darkState ? 'border-b-[#FFFFFF26]' : 'border-b-[#0000002D]'
+        }`}
+      >
         <h1
           className={`text-[20px] font-semibold ${
             darkState ? 'text-[#DEE2E6]' : ''

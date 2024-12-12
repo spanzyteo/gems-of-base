@@ -17,8 +17,8 @@ const SearchTokens = () => {
     >
       <div
         className={`w-[95%] border flex flex-col rounded-md ${
-          darkState ? 'bg-[#212529]' : 'bg-white'
-        } ${darkState ? 'border-none' : 'border-[#0000002D]'}`}
+          darkState ? 'bg-[#212529] border-none' : 'bg-white border-[#0000002D]'
+        }`}
       >
         <div
           className={`bg-[#21252908] text-2xl border-b flex items-center justify-center py-2 ${
