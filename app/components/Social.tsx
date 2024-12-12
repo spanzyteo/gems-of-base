@@ -7,6 +7,8 @@ import { useAppDispatch, useAppSelector } from '../store/hooks'
 import { closeListingModal } from '../store/modalSlice'
 import UpcomingLaunches from './UpcomingLaunches'
 import CryptoNews from './CryptoNews'
+import UsefulLinks from './UsefulLinks'
+import Footer from './Footer'
 
 const Social = () => {
   const dispatch = useAppDispatch()
@@ -67,8 +69,11 @@ const Social = () => {
           </div>
         )}
         <UpcomingLaunches />
-        <div className='hidden lg:flex w-[98%]'>
+        <div className="hidden lg:flex w-[98%]">
           <CryptoNews />
+        </div>
+        <div className="hidden lg:flex w-[98%]">
+          <UsefulLinks />
         </div>
       </div>
     </>

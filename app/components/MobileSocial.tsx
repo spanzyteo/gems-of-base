@@ -2,6 +2,7 @@ import { FaTelegram, FaX, FaXTwitter } from 'react-icons/fa6'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
 import { closeListingModal } from '../store/modalSlice'
 import CryptoNews from './CryptoNews'
+import UsefulLinks from './UsefulLinks'
 
 const MobileSocial = () => {
   const dispatch = useAppDispatch()
@@ -60,6 +61,7 @@ const MobileSocial = () => {
         </div>
       )}
       <CryptoNews />
+      <UsefulLinks />
     </div>
   )
 }
