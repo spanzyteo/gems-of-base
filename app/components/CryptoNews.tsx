@@ -15,7 +15,7 @@ const CryptoNews = () => {
         }`}
       >
         <h1 className={`${darkState ? 'text-[#DEE2E6]' : ''}`}>
-          Crypto In The News
+          新闻中的加密货币
         </h1>
       </div>
       <div

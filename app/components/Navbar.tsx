@@ -46,7 +46,7 @@ const Navbar = () => {
     <div className="bg-[#0152FF] flex flex-col relative">
       <div className="flex items-center h-[113px] justify-between lg:mx-16 mx-10">
         <div className="text-white">
-          <h1 className="text-2xl">基础宝石</h1>
+          <h1 className="text-2xl lg:text-3xl">Jiamuqu</h1>
         </div>
         <div className="lg:flex hidden items-center justify-between text-white gap-6 text-2xl">
           <h1>展示厅</h1>

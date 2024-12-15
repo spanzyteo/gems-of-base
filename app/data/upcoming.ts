@@ -24,7 +24,7 @@ export const upcoming: UpcomingItem[] = [
     twitter: 'https://x.com/BoopBase',
     telegram: 'https://t.me/BoopBase',
     info: '',
-    status: 'launched',
+    status: '启动',
     launchDate: '2024-12-01',
   },
   {
@@ -38,7 +38,7 @@ export const upcoming: UpcomingItem[] = [
     twitter: 'https://x.com/whoisebert',
     telegram: 't.me/whoisebert',
     info: '',
-    status: 'launched',
+    status: '启动',
     launchDate: '2024-12-05',
   },
   {
@@ -52,7 +52,7 @@ export const upcoming: UpcomingItem[] = [
     twitter: 'https://x.com/MagicCarpetBase',
     telegram: 'https://t.me/iris_flooz_xyz',
     info: '',
-    status: 'Upcoming',
+    status: '即将到来',
     launchDate: 'TBA',
   },
   {
@@ -66,7 +66,7 @@ export const upcoming: UpcomingItem[] = [
     twitter: 'https://x.com/0xVereum',
     telegram: 'https://t.me/Vereums',
     info: '',
-    status: 'Upcoming',
+    status: '即将到来',
     launchDate: 'TBA',
   },
   {
@@ -80,7 +80,7 @@ export const upcoming: UpcomingItem[] = [
     twitter: 'https://x.com/basedbustercoin',
     telegram: 'https://t.me/+HREQenTRCTg5ZjYx',
     info: '',
-    status: 'Upcoming',
+    status: '即将到来',
     launchDate: 'TBA',
   },
   {
@@ -94,7 +94,7 @@ export const upcoming: UpcomingItem[] = [
     twitter: 'https://x.com/basedlilbrett',
     telegram: 'https://t.me/basedlilbrett',
     info: '',
-    status: 'Upcoming',
+    status: '即将到来',
     launchDate: 'TBA',
   },
   {
@@ -108,7 +108,7 @@ export const upcoming: UpcomingItem[] = [
     twitter: 'https://x.com/PriceAiToken',
     telegram: 'https://t.me/PriceAiGroup',
     info: '',
-    status: 'Upcoming',
+    status: '即将到来',
     launchDate: 'TBA',
   },
 ]

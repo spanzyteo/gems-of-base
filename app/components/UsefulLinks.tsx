@@ -15,7 +15,7 @@ const UsefulLinks = () => {
           darkState ? 'border-b-[#FFFFFF26]' : 'border-b-[#0000002D]'
         }`}
       >
-        <h1 className={`${darkState ? 'text-[#DEE2E6]' : ''}`}>Useful Links</h1>
+        <h1 className={`${darkState ? 'text-[#DEE2E6]' : ''}`}>有用的链接</h1>
       </div>
       <div
         className={`flex flex-col items-center rounded-lg  ${
@@ -25,7 +25,7 @@ const UsefulLinks = () => {
         <h1
           className={`mt-2 ${darkState ? 'text-[#DEE2E6]' : 'text-[#212529]'}`}
         >
-          Data Aggregators
+          数据聚合器
         </h1>
         <div className="flex items-center gap-2 mt-2">
           <Link
@@ -44,7 +44,7 @@ const UsefulLinks = () => {
         <h1
           className={`mt-2 ${darkState ? 'text-[#DEE2E6]' : 'text-[#212529]'}`}
         >
-          Coinbase Official
+          Coinbase 官方
         </h1>
         <div className="flex items-center gap-2 mt-2">
           <Link
@@ -69,7 +69,7 @@ const UsefulLinks = () => {
         <h1
           className={`mt-2 ${darkState ? 'text-[#DEE2E6]' : 'text-[#212529]'}`}
         >
-          NFT Marketplaces
+          NFT 市场
         </h1>
         <div className="flex items-center gap-2 mt-2">
           <Link
@@ -100,7 +100,7 @@ const UsefulLinks = () => {
         <h1
           className={`mt-2 ${darkState ? 'text-[#DEE2E6]' : 'text-[#212529]'}`}
         >
-          Decentralized Exchanges
+          去中心化交易所
         </h1>
         <div className="flex items-center gap-2 mt-2">
           <Link
@@ -139,7 +139,7 @@ const UsefulLinks = () => {
         <h1
           className={`mt-2 ${darkState ? 'text-[#DEE2E6]' : 'text-[#212529]'}`}
         >
-          Other Links
+          其他连结
         </h1>
         <Link
           href={'https://etherscan.io/gastracker'}

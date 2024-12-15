@@ -20,7 +20,7 @@ const UpcomingLaunches = () => {
         }`}
       >
         <h1 className={`${darkState ? 'text-[#DEE2E6]' : ''}`}>
-          Upcoming Launches
+          即将发布的产品
         </h1>
       </div>
       <div
@@ -59,14 +59,14 @@ const UpcomingLaunches = () => {
                   darkState ? 'text-[#DEE2E6]' : 'text-gray-800'
                 }`}
               >
-                Status: {item.status}
+                地位: {item.status}
               </h1>
               <h1
                 className={`text-sm leading-[19px] ${
                   darkState ? 'text-[#DEE2E6]' : 'text-gray-800'
                 }`}
               >
-                Launch Date: {item.launchDate}
+                推出日期: {item.launchDate}
               </h1>
               <div className="flex flex-row text-gray-600 lg:gap-6 gap-10 mt-2">
                 <Link href={item.website}>
@@ -91,9 +91,7 @@ const UpcomingLaunches = () => {
             darkState ? 'border-b-[#FFFFFF26]' : 'border-b-[#0000002D]'
           }`}
         >
-          <h1 className={`${darkState ? 'text-[#DEE2E6]' : ''}`}>
-            NFT Launches
-          </h1>
+          <h1 className={`${darkState ? 'text-[#DEE2E6]' : ''}`}>NFT 发布</h1>
         </div>
         {nfts.map((item: NftsItem) => (
           <div
@@ -117,14 +115,14 @@ const UpcomingLaunches = () => {
                   darkState ? 'text-[#DEE2E6]' : 'text-gray-800'
                 }`}
               >
-                Status: {item.status}
+                地位: {item.status}
               </h1>
               <h1
                 className={`text-sm leading-[19px] ${
                   darkState ? 'text-[#DEE2E6]' : 'text-gray-800'
                 }`}
               >
-                Mint date: {item.mintDate}
+                铸币日期: {item.mintDate}
               </h1>
               <div className="flex flex-row text-gray-600 lg:gap-6 gap-10 mt-2">
                 <Link href={item.website}>

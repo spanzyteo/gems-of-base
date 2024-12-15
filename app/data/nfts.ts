@@ -21,7 +21,7 @@ export const nfts: NftsItem[] = [
     telegram: 'https://t.me/BoopBase',
     discord: 'https://discord.com/invite/wAjZSZBWNQ',
     info: '',
-    status: 'Private Sale',
+    status: '私人出售',
     mintDate: '2024-12-16',
   },
 ]

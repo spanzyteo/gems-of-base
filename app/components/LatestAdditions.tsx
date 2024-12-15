@@ -18,9 +18,7 @@ const LatestAdditions = () => {
           darkState ? 'border-b-[#FFFFFF26]' : 'border-b-[#0000002D]'
         }`}
       >
-        <h1 className={`${darkState ? 'text-[#DEE2E6]' : ''}`}>
-          Latest Addition
-        </h1>
+        <h1 className={`${darkState ? 'text-[#DEE2E6]' : ''}`}>最新添加</h1>
       </div>
       <div
         className={`flex flex-col rounded-lg  ${

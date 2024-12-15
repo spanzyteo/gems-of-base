@@ -10,27 +10,24 @@ export const cryptoNews: CryptoNewsData[] = [
   {
     id: 0,
     name: 'CoinDesk',
-    title:
-      "BlackRock's Bitcoin ETF Drops Most in 4 Months Amid Quantum Computing FUD",
-    description: 'IBIT drops 5.3% (Skitterphoto/Pixabay)',
-    date: 'Tue, 10 Dec 2024 10:21:08 GMT',
+    title: '受量子计算 FUD 影响，贝莱德比特币 ETF 跌幅为 4 个月来最大',
+    description: 'IBIT 下跌 5.3%（Skitterphoto/Pixabay）',
+    date: '2024 年 12 月 10 日星期二 10:21:08 GMT',
   },
   {
     id: 1,
     name: 'Cointelegraph',
-    title:
-      'Crypto custodian BitGo enables institutional Bitcoin yield with Core',
+    title: '加密托管商 BitGo 通过 Core 实现机构比特币收益',
     description:
-      'BitGo, a crypto custodian offering various Bitcoin staking options, now allows institutional clients to secure extra BTC rewards with Core’s dual staking model.',
-    date: 'Tue, 10 Dec 2024 10:06:04 GMT',
+      'BitGo 是一家提供各种比特币质押选项的加密货币托管机构，现在允许机构客户通过 Core 的双重质押模型获得额外的 BTC 奖励。',
+    date: '2024 年 12 月 10 日星期二 10:06:04 GMT',
   },
   {
     id: 2,
     name: 'Cointelegraph',
-    title:
-      'Could quantum computing threaten Satoshi Nakamoto’s 1 million Bitcoin?',
+    title: '量子计算能否威胁到中本聪的 100 万比特币？',
     description:
-      'Quantum computing raises concerns over the security of Satoshi Nakamoto’s 1 million Bitcoin, sparking debates on freezing vulnerable holdings to safeguard the network’s future.',
-    date: 'Tue, 10 Dec 2024 09:28:47 GMT',
+      '量子计算引发了人们对中本聪 (Satoshi Nakamoto) 100 万比特币安全性的担忧，并引发了关于冻结易受攻击的资产以保障网络未来的争论。',
+    date: '2024 年 12 月 10 日星期二 09:28:47 GMT',
   },
 ]

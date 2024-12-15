@@ -23,19 +23,19 @@ const ShowRoom = () => {
             darkState ? 'text-[#DEE2E6]' : ''
           }`}
         >
-          From the <span className="text-[#0D6EFD]">Showroom</span>
+          从陈列室
         </h1>
       </div>
       <div className="flex flex-col items-center">
         <button className="py-2 px-5 bg-[#0D6EFD] rounded-md mt-4 text-white font-semibold">
-          Connect Wallet
+          连接钱包
         </button>
         <h1
           className={`font-semibold mt-2 text-[18px] text-center ${
             darkState ? 'text-[#DEE2E6]' : 'text-gray-600'
           }`}
         >
-          Connect your wallet to upvote your favorite gems
+          连接你的钱包来为你最喜欢的宝石点赞
         </h1>
       </div>
       <div
